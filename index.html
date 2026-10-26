@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <!--
+    ================================================================
+    MODELO DE PROPOSTA COMERCIAL
+    Tudo que está [ENTRE COLCHETES] é para você trocar.
+    Valores, prazos e textos são exemplos: ajuste para o seu projeto.
+    Procure por "EDITE" para achar os pontos principais.
+    ================================================================
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- EDITE: título da aba -->
+  <title>Proposta · [Nome do Cliente] · [Sua Marca]</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+  <link rel="apple-touch-icon" href="logo.svg" />
+  <meta name="description" content="Proposta de projeto · Landing page para [Nome do Cliente] · [Sua Marca]." />
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="proposta.css" />
+</head>
+<body>
+  <!-- ================= NAV ================= -->
+  <header class="pnav" id="pnav">
+    <div class="container pnav__in">
+      <a class="pbrand" href="#">
+        <img src="logo.svg" alt="[Sua Marca]" />
+        <!-- EDITE: nome da sua marca e o que você faz -->
+        <span class="pbrand__t"><b>[Sua Marca]</b><span>[Design &amp; Sites]</span></span>
+      </a>
+      <!-- EDITE: troque 55SEUNUMERO pelo seu WhatsApp (ex.: 5511999999999) em todos os links wa.me -->
+      <a class="btn btn--primary pnav__cta" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.28-.1-.48-.15-.68.15s-.76.96-.94 1.16c-.17.2-.34.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.89-.79-1.48-1.76-1.66-2.06-.17-.3-.02-.46.13-.6.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.25-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.03 1.02-1.03 2.48s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.7.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.42-.08-.12-.28-.2-.57-.34M12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.89 9.89-9.89 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.89-9.88 9.89m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.48-8.41"/></svg>
+        <span class="pnav__cta-full">Aprovar proposta</span>
+        <span class="pnav__cta-short">Aprovar</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ CAPA ============ -->
+    <header class="phead">
+      <div class="hero__bg" aria-hidden="true"><canvas class="hero__lines"></canvas></div>
+      <div class="container">
+        <span class="eyebrow eyebrow--accent">Proposta de Projeto · [Sua Marca]</span>
+        <!-- EDITE: a promessa principal da proposta -->
+        <h1 class="phead__title">Uma landing page à altura do <em>seu</em> trabalho.</h1>
+        <p class="lead phead__lead">
+          Uma landing page desenhada do zero, com visual sofisticado e estrutura pensada pra converter.
+          Abaixo, o escopo e o investimento do projeto.
+        </p>
+        <div class="pmeta">
+          <div class="pmeta__i"><span class="pmeta__k">Preparado para</span><span class="pmeta__v">[Nome do Cliente]</span></div>
+          <div class="pmeta__i"><span class="pmeta__k">Por</span><span class="pmeta__v">[Sua Marca]</span></div>
+          <!-- A data de emissão é preenchida sozinha (proposta-fx.js) -->
+          <div class="pmeta__i"><span class="pmeta__k">Emitida em</span><span class="pmeta__v" id="p-data">·</span></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ CLIENTES / PORTFÓLIO ============ -->
+    <!-- EDITE: coloque as fotos em assets/clientes/ com o mesmo nome do src.
+         Sem foto, o card mostra a inicial (data-i). Adicione ou remova <article> à vontade. -->
+    <section class="section" id="clientes">
+      <div class="container section__head">
+        <span class="eyebrow reveal">Nossos Clientes</span>
+        <h2 class="h2 reveal">Autoridade que se constrói no visual.</h2>
+        <p class="lead reveal">
+          [Fale de quem você já atendeu e do resultado que entregou. Ex.: Já criamos páginas e
+          materiais visuais para especialistas e negócios que precisavam vender mais e passar mais autoridade.]
+        </p>
+      </div>
+      <div class="container clients">
+        <article class="ccard reveal">
+          <div class="ccard__photo" data-i="A" data-label="[Cliente 1]"><img class="ccard__img" src="assets/clientes/cliente-1.jpg" alt="[Cliente 1]" loading="lazy" onerror="this.remove()" /></div>
+          <div class="ccard__grad"></div>
+          <div class="ccard__info">
+            <div class="ccard__head"><h3 class="ccard__name">[Cliente 1]</h3><span class="tagmono">Landing Page</span></div>
+            <p class="ccard__desc">[Uma ou duas frases sobre o cliente e o que você fez pra ele.]</p>
+          </div>
+        </article>
+        <article class="ccard reveal">
+          <div class="ccard__photo" data-i="B" data-label="[Cliente 2]"><img class="ccard__img" src="assets/clientes/cliente-2.jpg" alt="[Cliente 2]" loading="lazy" onerror="this.remove()" /></div>
+          <div class="ccard__grad"></div>
+          <div class="ccard__info">
+            <div class="ccard__head"><h3 class="ccard__name">[Cliente 2]</h3><span class="tagmono">Site • LP</span></div>
+            <p class="ccard__desc">[Uma ou duas frases sobre o cliente e o que você fez pra ele.]</p>
+          </div>
+        </article>
+        <article class="ccard reveal">
+          <div class="ccard__photo" data-i="C" data-label="[Cliente 3]"><img class="ccard__img" src="assets/clientes/cliente-3.jpg" alt="[Cliente 3]" loading="lazy" onerror="this.remove()" /></div>
+          <div class="ccard__grad"></div>
+          <div class="ccard__info">
+            <div class="ccard__head"><h3 class="ccard__name">[Cliente 3]</h3><span class="tagmono">Identidade • LP</span></div>
+            <p class="ccard__desc">[Uma ou duas frases sobre o cliente e o que você fez pra ele.]</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ O QUE VAMOS CRIAR (escopo) ============ -->
+    <!-- EDITE: deixe claro o que entra. O que não está na lista não está incluso. -->
+    <section class="section section--tight" id="escopo">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal">O que vamos criar</span>
+          <h2 class="h2 reveal">Uma landing page feita pra converter.</h2>
+          <p class="lead reveal">Copy, design, estrutura e publicação: você recebe a página pronta e no ar.</p>
+        </div>
+        <div class="offergrid">
+          <article class="offer reveal">
+            <div class="offer__top">
+              <span class="offer__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M8 14h5"/><path d="M8 17h8"/></svg></span>
+              <span class="offer__tag">R$ 5.000</span>
+            </div>
+            <h3 class="offer__title">Landing Page</h3>
+            <p class="offer__desc">Página única, completa, com visual sofisticado e uma estrutura pensada pra transformar visita em contato ou venda.</p>
+            <ul class="offer__list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Landing page desenhada do zero, com identidade própria</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Estrutura pensada pra conversão: promessa, benefícios, prova, oferta e chamada pra ação</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Copy completa: todos os textos da página escritos por nós</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Design responsivo: desktop, tablet e celular</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Botões integrados ao seu checkout, WhatsApp ou formulário</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Configuração pra aparecer bem no Google e no compartilhamento de link</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Página 100% no ar, publicada por nós</li>
+            </ul>
+            <p class="offer__note offer__note--hl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Copy inclusa.</b> A gente escreve os textos a partir de uma conversa com você sobre o produto, o público e a oferta. Você só aprova.</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INVESTIMENTO ============ -->
+    <!-- EDITE: prazo, valor total e formas de pagamento. Confira se os valores batem em toda a página. -->
+    <section class="section section--tight" id="investimento">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal">Investimento</span>
+          <h2 class="h2 reveal">Valor do projeto e condições.</h2>
+        </div>
+        <div class="factrow reveal">
+          <div class="fact">
+            <span class="fact__k">Prazo de entrega</span>
+            <span class="fact__v">7 dias úteis</span>
+            <span class="fact__s">A partir da aprovação da proposta e da conversa de briefing.</span>
+          </div>
+          <div class="fact">
+            <span class="fact__k">Investimento total</span>
+            <span class="fact__v">R$ 5.000</span>
+            <span class="fact__s">Landing page completa, com copy, no ar.</span>
+          </div>
+        </div>
+        <div class="paygrid">
+          <div class="paycard paycard--hl reveal">
+            <span class="paycard__badge">Melhor opção</span>
+            <span class="paycard__k">À vista</span>
+            <div class="paycard__v"><b>R$ 4.750</b><s>R$ 5.000</s></div>
+            <span class="paycard__off">5% de desconto · economize R$ 250</span>
+            <p class="paycard__note">Pagamento único na aprovação da proposta.</p>
+          </div>
+          <div class="paycard reveal">
+            <span class="paycard__k">Parcelado em 2×</span>
+            <div class="paycard__split"><b>R$ 2.500</b><span>+ R$ 2.500</span></div>
+            <p class="paycard__note">50% para iniciar o projeto e 50% na entrega final. O primeiro pagamento é antes de começar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAMA DE BENEFÍCIOS (opcional) ============ -->
+    <!-- Se você não tem um programa de cashback/benefícios, apague esta <section> inteira. -->
+    <section class="section" id="clube">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="rings rings--cta" aria-hidden="true"><span></span><span></span><span></span></div>
+
+          <div class="cta__text">
+            <span class="eyebrow eyebrow--accent">Novidade · Clube [Sua Marca]</span>
+            <h2 class="cta__title">Trabalhar com a gente tem mais vantagem.</h2>
+            <p class="lead">
+              Nosso programa de benefícios: a cada projeto, você recebe 10% de cashback para usar
+              em novos serviços dentro de 2 meses. Fechou com a gente? O valor já fica disponível
+              para o próximo projeto.
+            </p>
+            <ul class="perks">
+              <li>
+                <span class="perks__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 8.5V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1.5"/><path d="M21 9.5h-4.5a2.5 2.5 0 0 0 0 5H21z"/></svg></span>
+                <span class="perks__t"><strong>10% de volta</strong>em todo projeto fechado</span>
+              </li>
+              <li>
+                <span class="perks__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>
+                <span class="perks__t"><strong>2 meses para usar</strong>o crédito fica esperando você</span>
+              </li>
+              <li>
+                <span class="perks__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18V9M10 18V5M16 18v-6M22 18H2"/></svg></span>
+                <span class="perks__t"><strong>Acumula a cada projeto</strong>quanto mais você cria, mais volta</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cta__card" aria-hidden="true">
+            <div class="clubdeck">
+              <span class="clubfan" style="--i:6"></span>
+              <span class="clubfan" style="--i:5"></span>
+              <span class="clubfan" style="--i:4"></span>
+              <span class="clubfan" style="--i:3"></span>
+              <span class="clubfan" style="--i:2"></span>
+              <span class="clubfan" style="--i:1"></span>
+              <div class="clubcard">
+                <span class="clubcard__sheen"></span>
+                <div class="clubcard__top">
+                  <img src="logo.svg" alt="" />
+                  <span>Clube [Sua Marca]</span>
+                </div>
+                <span class="clubcard__chip"></span>
+                <div class="clubcard__pct"><strong>10%</strong><span>cashback</span></div>
+                <div class="clubcard__bot">
+                  <span><i>Membro</i>[Nome do Cliente]</span>
+                  <span><i>Válido por</i>2 meses</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="section" id="fechar">
+      <div class="container">
+        <div class="summary reveal">
+          <div class="rings rings--cta" aria-hidden="true"><span></span><span></span><span></span></div>
+          <span class="eyebrow summary__ey">Vamos começar?</span>
+          <h2 class="summary__h">Sua landing page, pronta pra vender.</h2>
+          <!-- EDITE: repita aqui o valor e o desconto da seção Investimento -->
+          <p class="summary__note">Landing page completa, com copy, por <b>R$ 5.000</b> (ou <b>R$ 4.750</b> à vista). É só aprovar que a gente já dá o start.</p>
+          <div class="summary__cta">
+            <a class="btn btn--primary btn--lg" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">Aprovar proposta <span class="chevron">→</span></a>
+            <a class="btn btn--ghost btn--lg" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">Tirar uma dúvida</a>
+          </div>
+          <p class="summary__valid">Prazo de 7 dias úteis · valores válidos para o escopo acima.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <!-- EDITE: seus links e contatos -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img class="footer__logo" src="logo.svg" alt="[Sua Marca]" width="43" height="43" />
+        <p>[Uma frase sobre o que você faz. Ex.: Sites e landing pages que vendem.]</p>
+      </div>
+      <div class="footer__col">
+        <span class="footer__label">[Sua Marca]</span>
+        <a href="[https://seusite.com.br]">Site</a>
+        <a href="[https://seusite.com.br/portfolio]">Portfólio</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__label">Redes Sociais</span>
+        <a href="https://www.instagram.com/[seuperfil]/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__label">Contato</span>
+        <a href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:[seuemail@dominio.com]">[seuemail@dominio.com]</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 [Sua Marca]</span>
+      <span class="footer__legal">Proposta comercial · confidencial</span>
+    </div>
+  </footer>
+
+  <script src="proposta-fx.js"></script>
+</body>
+</html>
